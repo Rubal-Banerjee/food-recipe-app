@@ -13,7 +13,7 @@ export const recipeSlice = createSlice({
     name: "recipeSlice",
     initialState,
     reducers: {
-        setRecipe: (state, action: PayloadAction<Array<IRecipe>>) => {
+        setRecipe: (_, action: PayloadAction<Array<IRecipe>>) => {
             return action.payload;
         }
     }
